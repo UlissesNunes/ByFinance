@@ -1,0 +1,86 @@
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    section#login {
+        width: 78vw;
+        height: 268px;
+    }
+
+    section#login > div#img {
+        float: left;
+        width: 35%;
+        height: 100%;
+        border-radius: 15px 1px 0px 15px;
+    }
+
+    section#login > div#formu {
+        float: right;
+        width: 65%;
+    }
+
+    div#formu > h1 {
+        font-size: 1.5em;
+        
+    }
+    
+    div#formu > p {
+        font-size: .8em;
+    }
+
+    span.letradestaque {
+        font-size: .7em;
+        text-align: center;
+        display: inline-block;
+        color: var(--cordestaque);
+        
+    }
+    span.mobile {
+        font-size: .6em;
+        display: none; }
+}
+
+@media screen and (min-width:993px) {
+
+    body , html {
+        background-image: linear-gradient(2deg,rgb(42, 61, 69) , rgb(197, 236, 255) 60%);
+      
+    }
+
+    section#login {
+        width: 85vw;
+        height: 300px;
+    }
+
+    section#login > div#img {
+        float: right;
+        width: 35%;
+        height: 100%;
+        border-radius: 1px 15px 15px 0px;
+    }
+
+    section#login > div#formu {
+        float: left;
+        width: 65%;
+    }
+
+    div#formu > h1 {
+        font-size: 1.7em;
+        
+    }
+    
+    div#formu > p {
+        font-size: 1em;
+    }
+    span.letradestaque {
+        font-size: .7em;
+        text-align: center;
+        display: inline-block;
+        color: var(--cordestaque);
+        
+    }
+
+    span.mobile {
+        font-size: .6em;
+        display: none;
+    }
+    
+}
