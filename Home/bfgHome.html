@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByFinance Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!--[#231c0b] MARROM CASTANHO
+    [#070602] MARRROM PRETO
+    [#a3a2a2] CINZA MEDIO
+    [#3a2e14] MARROM medio
+    [#5d5537] MARROM CLARO
+-->
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-[#231c0b] text-white p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">ByFinance Group</h1>
+            <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="../index.html"  class="transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-lg hover:text-[#5d5537]" >Início</a></li>
+                <li><a href="#" class=" transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-lg hover:text-[#5d5537]">Sobre</a></li>
+                <li><a href="#" class=" transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-lg hover:text-[#5d5537]">Serviços</a></li>
+                <li><a href="#" class="  transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-lg hover:text-[#5d5537]">Contato</a></li>
+            </ul>
+        </div>
+        <ul id="mobile-menu" class="hidden bg-gray-100 text-[#231c0b] p-2 space-y-2 md:hidden transition-all duration-500 ease ">
+            <li><a href="../index.html"  class="  transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-lg hover:text-[#5d5537]">Início</a></li>
+            <li><a href="#" class="block">Sobre</a></li>
+            <li><a href="#" class="block">Serviços</a></li>
+            <li><a href="#" class="block">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto p-6 text-center">
+        <h2 class="text-3xl font-bold text-[#231c0b]">Bem-vindo ao ByFinance</h2>
+        <p class="text-gray-700 mt-4">Gerencie suas finanças de forma simples e prática.</p>
+        <button class="mt-6 bg-[#231c0b] text-white px-6 py-2 rounded-lg transition-all duration-500 ease-in-out  hover:bg-[#3a2e14]">Saiba Mais</button>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-[#231c0b] text-white text-center text-xs p-8 mt-20  mb-6" >
+        <p>&copy; 2025 ByFinance. Todos os direitos reservados conforme a nossa diretrizes.</p>
+    </footer>
+
+    <!-- Script do Menu Mobile -->
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 :root {
 
-    --corbase: rgb(93, 85, 55);
-    --cordestaque: rgb(58, 46, 20); 
-    --corsecundaria: rgb(163, 162, 162);
+    --corbase: #5d5537;
+    --cordestaque: #3a2e14; 
+    --corsecundaria: #a3a2a2;
 }
 
 
@@ -14,7 +14,7 @@
 }
 
 body , html {
-    background-image: linear-gradient(-5deg,rgb(7, 6, 2) , rgb(35, 28, 11)  80%);
+    background-image: linear-gradient(-5deg,#070602 , #231c0b  80%);
     height: 100vh;
     width: 100vw;
     background-attachment: fixed;
@@ -167,8 +167,8 @@ form a.buton- {
     display: inline-block;
     height: 22px;
     width: 50%;
-    padding-top: 1px;
-    margin-top: 6px;
+    padding: 4px;
+    margin-top: 7px;
     background-color: white;
     border: 1px solid var(--cordestaque);
     text-align: center;
@@ -188,14 +188,20 @@ form a.buton:hover {
 
 form a.buton-:hover {
     background-color: rgba(28, 17, 1, 0.94);
-    color: var(--cordestaque);
+    color: white;
     font-weight: bold;
-    padding-top:5px ;
-    transition: .4s;
+    padding: 4px ;
+    transition: .6s;
+    text-align: center;
 }
 
 span#msg {
-    font-size: .9em;
+    font-size: .8em;
+   
+}
+
+span#msg:hover {
+    color: white;
 }
 
 
@@ -225,3 +231,4 @@ footer{
     color: rgba(28, 17, 1, 0.94);
     font-weight: bolder;
 }
+

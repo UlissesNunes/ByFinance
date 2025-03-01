@@ -8,6 +8,7 @@
       rel="stylesheet">
       <link rel="stylesheet" href="mobile-first.css">
     <link rel="stylesheet" href="geral.css">
+    <link rel="shortcut icon" href="./imagem/logoByFinance.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -17,7 +18,7 @@
             <div id="formu">
                 <h1>ByFinance Group</h1>
                 <p>Seja bem-vindo(a) ao seu suporte financeiro. A prioridade do nosso grupo é você! faça o login e acesse sua conta</p>
-                <form action="login.js" method="post" autocomplete="on">
+                <form method="post" autocomplete="on">
                     <div id="area">
                         <span class="material-icons">person</span>
                             <input type="email" name="iemail" id="iemail" placeholder="Insira seu usuário" required autocomplete="email" minlength="7">
@@ -54,6 +55,22 @@
 
 
     </main>
+
+    <script type="module">
+            import ByFinance from "./bfg.js"
+
+            const formAtual = document.querySelector("form")
+            formAtual.addEventListener("submit" , () => {
+            event.preventDefault()
+
+                const user = formAtual.iemail.value
+                const senha = formAtual.isenha.value
+
+                const byFinance = new ByFinance(user , senha)
+                byFinance.logar()
+        })
+
+    </script>
 
 </body>
 </html>
