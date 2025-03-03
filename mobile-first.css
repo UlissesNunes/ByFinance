@@ -80,11 +80,11 @@ div#formu > p {
 div#area {
     width: 100%;
     margin: 4px 0px;
-    background-color: rgba(51, 74, 85, 0.150);
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     padding-top: 1px;
     height: 35px;
-    border: 1px solid rgba(51, 74, 85, 0.150);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     
 }
 
@@ -113,8 +113,17 @@ div#area > label {
 }
 
 div#area > input:focus-within {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(0, 0, 0);
 }
+
+
+div#area > input:focus {
+    background-color: var(--corsecundaria);
+    outline: none; 
+    border: 2px solid var(--cordestaque);
+}
+
+
 
  form input[type=submit] {
     display: block;
@@ -219,9 +228,6 @@ span.mobile {
     color: var(--cordestaque);
 }
 
-footer{
-    background-color: aliceblue;
-}
 
 .f {
     flex: auto;
