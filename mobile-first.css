@@ -118,7 +118,7 @@ div#area > input:focus-within {
 
 
 div#area > input:focus {
-    background-color: var(--corsecundaria);
+    background-color: var(--corsecundaria) !important;
     outline: none; 
     border: 2px solid var(--cordestaque);
 }
